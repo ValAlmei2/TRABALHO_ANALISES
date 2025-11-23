@@ -31,7 +31,7 @@
     },
 
     // Opcional: Executa um comando após a criação do Codespace para verificar a versão do Java
-    "postCreateCommand": "java -version", 
+    "postCreateCommand": "java -version",
 
     // Opcional: Configura o mapeamento de portas. 
     // Útil se seu projeto rodar em uma porta específica (ex: Spring Boot na 8080)

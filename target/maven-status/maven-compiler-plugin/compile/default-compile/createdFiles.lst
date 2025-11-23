@@ -1,0 +1,16 @@
+br/mackenzie/webapp/professor/ProfessorController.class
+br/mackenzie/webapp/WebApp.class
+br/mackenzie/webapp/atividade/Atividade.class
+br/mackenzie/webapp/Secretaria/SecretariaController.class
+br/mackenzie/webapp/atividade/AtividadeController.class
+br/mackenzie/webapp/professor/Professor.class
+br/mackenzie/webapp/aluno/AlunoRepo.class
+br/mackenzie/webapp/Coordenacao/Coordenacao.class
+br/mackenzie/webapp/aluno/AlunoController.class
+br/mackenzie/webapp/aluno/Aluno.class
+br/mackenzie/webapp/Coordenacao/CoordenacaoController.class
+br/mackenzie/webapp/Secretaria/SecretariaRepo.class
+br/mackenzie/webapp/Secretaria/Secretaria.class
+br/mackenzie/webapp/professor/ProfessorRepo.class
+br/mackenzie/webapp/atividade/AtividadeRepo.class
+br/mackenzie/webapp/Coordenacao/CoordenacaoRepo.class

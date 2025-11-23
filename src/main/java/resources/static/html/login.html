@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/css/stylelogin.css" type="text/css">
+        </head>
+<body>
+    <h1>Login</h1>
+    <div class="input">
+    	<table>
+        	<tr>
+        		<td><label for="username">Usuário/RA/Matrícula:</label></td>
+        		<td><input id="username"></td>
+        	</tr>
+        	<tr>
+        		<td><label for="password">Senha:</label></td>
+        		<td><input type="password" id="password"></td>
+        	</tr>
+        	<tr><td></td><td><button onclick="getToken()">Entrar</button></td></tr>
+            </table>
+    </div>
+    <div id="message"></div>
+
+    <script src="/js/jwt-vanilla.js"></script>
+</body>
+</html>
