@@ -1,0 +1,39 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/java
+{
+    // Define o nome do seu ambiente de desenvolvimento
+    "name": "Java (Codespace com Maven)", 
+
+    // Define a imagem base do contêiner: Java 21 no Debian Bullseye
+    "image": "mcr.microsoft.com/devcontainers/java:1-21-bullseye",
+
+    // Configurações de recursos adicionais que serão instalados no contêiner
+    "features": {
+        "ghcr.io/devcontainers/features/java:1": {
+            "version": "none",
+            "installMaven": "true", // INSTALA O MAVEN
+            "installGradle": "false"
+        }
+    },
+
+    // Personalizações para o VS Code (instalação de extensões)
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                // Pacote de extensões essenciais para desenvolvimento Java no VS Code
+                "vscjava.vscode-java-pack",      
+                // Extensão que oferece suporte e comandos específicos para o Maven
+                "vscjava.vscode-maven",
+                // Extensão útil para visualizar e editar o arquivo pom.xml
+                "redhat.vscode-xml"          
+            ]
+        }
+    },
+
+    // Opcional: Executa um comando após a criação do Codespace para verificar a versão do Java
+    "postCreateCommand": "java -version", 
+
+    // Opcional: Configura o mapeamento de portas. 
+    // Útil se seu projeto rodar em uma porta específica (ex: Spring Boot na 8080)
+    // "forwardPorts": [8080]
+}
