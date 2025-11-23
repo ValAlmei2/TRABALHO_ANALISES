@@ -13,7 +13,10 @@
             "version": "none",
             "installMaven": "true", // INSTALA O MAVEN
             "installGradle": "false"
-        }
+        },
+        // >>> IMPLEMENTAÇÃO NECESSÁRIA PARA O ERRO DE PUSH: <<<
+        "ghcr.io/devcontainers/features/git-lfs:1": {} 
+        // Esta linha instala o Git LFS, resolvendo o erro que impediu o push.
     },
 
     // Personalizações para o VS Code (instalação de extensões)
@@ -21,11 +24,11 @@
         "vscode": {
             "extensions": [
                 // Pacote de extensões essenciais para desenvolvimento Java no VS Code
-                "vscjava.vscode-java-pack",      
+                "vscjava.vscode-java-pack", 
                 // Extensão que oferece suporte e comandos específicos para o Maven
                 "vscjava.vscode-maven",
                 // Extensão útil para visualizar e editar o arquivo pom.xml
-                "redhat.vscode-xml"          
+                "redhat.vscode-xml" 
             ]
         }
     },
@@ -35,5 +38,5 @@
 
     // Opcional: Configura o mapeamento de portas. 
     // Útil se seu projeto rodar em uma porta específica (ex: Spring Boot na 8080)
-    // "forwardPorts": [8080]
+    "forwardPorts": [8080] // Descomentei a porta 8080 para facilitar o acesso à aplicação web.
 }
